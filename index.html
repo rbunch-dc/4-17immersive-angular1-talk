@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+	Name: <input type="text" id="aTextBox" />
+	<hr />
+	Hello, <span id="nameText"></span>!
+
+	
+	<script type="text/javascript">
+		var textBox = document.getElementById('aTextBox');
+		textBox.addEventListener('keyup', (event)=>{
+			// console.log(event)
+			var text = event.target.value
+			document.getElementById('nameText').innerHTML = text
+		})
+	</script>
+
+</body>
+</html>
